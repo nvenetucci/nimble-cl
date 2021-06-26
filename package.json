@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/nvenetucci/nimble-cl/issues"
   },
-  "homepage": "https://github.com/nvenetucci/nimble-cl#readme"
+  "homepage": "https://github.com/nvenetucci/nimble-cl#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  }
 }
