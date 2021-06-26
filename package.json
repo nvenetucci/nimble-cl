@@ -1,0 +1,20 @@
+{
+  "name": "nimble-cl",
+  "version": "1.0.0",
+  "description": "Express-React Craigslist scraper for quick vehicle hunting",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nvenetucci/nimble-cl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nvenetucci/nimble-cl/issues"
+  },
+  "homepage": "https://github.com/nvenetucci/nimble-cl#readme"
+}
