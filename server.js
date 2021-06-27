@@ -15,9 +15,28 @@ app.get("/api/cars/:make", (req, res) => {
       const results = [];
 
       $(".result-info").each((i, el) => {
+        const time1 = $(el)
+          .find(".result-date")
+          .attr("title")
+          .split(" ")[3]
+          .split(":")
+          .slice(0, 2)
+          .join(":");
+        const time2 = $(el).find(".result-date").attr("title").split(" ")[4];
+        const link = $(el).find("a").attr("href");
         const title = $(el).find(".result-heading").text().trim();
+        const price = $(el).find(".result-price").text();
+        const nearby = $(el).find(".nearby").text();
+        const location =
+          nearby !== "" ? nearby : $(el).find(".result-hood").text().trim();
 
-        results.push(title);
+        results.push({
+          time: time1 + " " + time2,
+          link,
+          title,
+          price,
+          location,
+        });
       });
 
       res.json(results);
