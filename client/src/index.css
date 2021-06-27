@@ -1,13 +1,113 @@
-body {
+.rows {
+  color: #222;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.result-row {
+  color: #222;
+  list-style: none;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: transparent;
+  padding: 0 10px 20px;
+  position: relative;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.result-info {
+  color: #222;
+  list-style: none;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 20px;
+  margin: 0;
+  text-overflow: ellipsis;
+}
+
+.result-time {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  color: gray;
+  font-size: 11px;
+  line-height: 22px;
+  margin-right: 2px;
+}
+
+.result-heading {
+  color: #222;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: inline;
+}
+
+.result-link {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.result-meta {
+  color: #222;
+  list-style: none;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 2px 0 0 0;
+}
+
+.result-price {
+  color: #222;
+  list-style: none;
+  margin: 0;
+  font: inherit;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  padding: 1px 3px;
+}
+
+.result-location {
+  color: #222;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
