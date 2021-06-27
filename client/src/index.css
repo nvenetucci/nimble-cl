@@ -48,7 +48,7 @@
   color: gray;
   font-size: 11px;
   line-height: 22px;
-  margin-right: 2px;
+  margin-right: 4px;
 }
 
 .result-heading {
@@ -75,6 +75,10 @@
   font-family: "Times New Roman", Times, serif;
 }
 
+.result-link:hover {
+  text-decoration: underline;
+}
+
 .result-meta {
   color: #222;
   list-style: none;
@@ -91,7 +95,7 @@
 .result-price {
   color: #222;
   list-style: none;
-  margin: 0;
+  margin: 0 4px;
   font: inherit;
   vertical-align: baseline;
   border-radius: 0.25em;
@@ -102,7 +106,6 @@
 }
 
 .result-location {
-  color: #222;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -110,6 +113,7 @@
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  color: #b8860b;
 }
 
 select {
