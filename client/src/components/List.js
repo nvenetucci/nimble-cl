@@ -21,7 +21,18 @@ const List = () => {
     <ul className="rows">
       {results.map((result, index) => (
         <li className="result-row" key={index}>
-          {result}
+          <div className="result-info">
+            <time className="result-time">{result.time}</time>
+            <h1 className="result-heading">
+              <a className="result-link" href={result.link}>
+                {result.title}
+              </a>
+            </h1>
+            <span className="result-meta">
+              <span className="result-price">{result.price}</span>
+              <span className="result-location">{result.location}</span>
+            </span>
+          </div>
         </li>
       ))}
     </ul>
