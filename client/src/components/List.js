@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const List = () => {
-  const [category, setCategory] = useState("cars");
+  const [category, setCategory] = useState("cto");
   const [make, setMake] = useState("bmw");
   const [results, setResults] = useState([]);
 
@@ -23,8 +23,8 @@ const List = () => {
     <>
       {/* Category Dropdown Menu */}
       <select value={category} onChange={(e) => setCategory(e.target.value)}>
-        <option value="cars">Cars</option>
-        <option value="parts">Parts</option>
+        <option value="cto">Cars</option>
+        <option value="pts">Parts</option>
       </select>
 
       {/* Vehicle Make Dropdown Menu */}
