@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import CategoryDropdown from "./CategoryDropdown";
 
 const List = () => {
   const [category, setCategory] = useState("cto");
@@ -21,11 +22,10 @@ const List = () => {
 
   return (
     <>
-      {/* Category Dropdown Menu */}
-      <select value={category} onChange={(e) => setCategory(e.target.value)}>
-        <option value="cto">Cars</option>
-        <option value="pts">Parts</option>
-      </select>
+      <CategoryDropdown
+        category={category}
+        changeCategory={(value) => setCategory(value)}
+      />
 
       {/* Vehicle Make Dropdown Menu */}
       <select value={make} onChange={(e) => setMake(e.target.value)}>
