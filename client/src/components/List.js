@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CategoryDropdown from "./CategoryDropdown";
+import VehicleDropdown from "./VehicleDropdown";
 
 const List = () => {
   const [category, setCategory] = useState("cto");
@@ -27,18 +28,7 @@ const List = () => {
         changeCategory={(value) => setCategory(value)}
       />
 
-      {/* Vehicle Make Dropdown Menu */}
-      <select value={make} onChange={(e) => setMake(e.target.value)}>
-        <option value="alfa">Alfa Romeo</option>
-        <option value="bmw">BMW</option>
-        <option value="honda">Honda</option>
-        <option value="infiniti">Infiniti</option>
-        <option value="lexus">Lexus</option>
-        <option value="mazda">Mazda</option>
-        <option value="mercedes">Mercedes-Benz</option>
-        <option value="nissan">Nissan</option>
-        <option value="toyota">Toyota</option>
-      </select>
+      <VehicleDropdown make={make} changeMake={(value) => setMake(value)} />
 
       {/* List Results */}
       <ul className="rows">
