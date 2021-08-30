@@ -6,6 +6,7 @@ const CategoryDropdown = (props) => {
     >
       <option value="cto">Cars</option>
       <option value="pts">Parts</option>
+      <option value="wto">Wheels</option>
     </select>
   );
 };
